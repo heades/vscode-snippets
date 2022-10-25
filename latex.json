@@ -42,6 +42,7 @@
 		],
 		"description": "Creates a basic definition block."
 	},
+	//  Sectioning:
 	"New section": {
 		"prefix": "sec",
 		"body": [
@@ -90,6 +91,7 @@
 		],
 		"description": "Creates a new array block."
 	},
+	// Items:
 	"New itemize": {
 		"prefix": "item",
 		"body": [
@@ -98,6 +100,15 @@
 			"\\end{itemize}"
 		],
 		"description": "Creates a new itemize block."
+	},
+	"New enumerate item": {
+		"prefix": "enum",
+		"body": [
+			"\\begin{enumerate}[label=\\roman*.]",
+			"\\item $0",
+			"\\end{enumerate}"
+		],
+		"description": "Creates a new enumitem block."
 	},
 	"New begin": {
 		"prefix": "begin",
@@ -176,5 +187,15 @@
 			"]"
 		],
 		"description": "Creates a new Atriangle diagram."
-	}	
+	},
+	// Inference rule snippets:
+	"New inference rule": {
+		"prefix": "\\infer",
+		"body": [
+			"\\inferrule* [flushleft,right=$1] {",
+			"\t $2",
+			"}{$0}"
+		],
+		"description": "Creates a new inference rule."
+	},	
 }
