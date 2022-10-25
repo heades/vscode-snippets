@@ -197,5 +197,14 @@
 			"}{$0}"
 		],
 		"description": "Creates a new inference rule."
+	},
+	"New mathpar block": {
+		"prefix": "\\mathpar",
+		"body": [
+			"\\begin{mathpar}",
+			"\t $0",
+			"\\end{mathpar}"
+		],
+		"description": "Creates a new mathpar block."
 	},	
 }
